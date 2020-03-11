@@ -1,0 +1,35 @@
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\RAWr.exe.config
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\RAWr.exe
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\RAWr.pdb
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\FreeImage.Standard.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\MedallionShell.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\System.Drawing.Common.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\System.Drawing.Primitives.dll
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\MedallionShell.xml
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\obj\x64\Release\RAWr.Form1.resources
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\obj\x64\Release\RAWr.Properties.Resources.resources
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\obj\x64\Release\RAWr.csproj.GenerateResource.Cache
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\obj\x64\Release\RAWr.exe
+C:\Users\l025057\documents\visual studio 2015\Projects\RAWr\RAWr\obj\x64\Release\RAWr.pdb
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.exe
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.pdb
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\RAWr.exe.config
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\RAWr.exe
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\RAWr.pdb
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\FreeImage.Standard.dll
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\MedallionShell.dll
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.dll
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\System.Drawing.Common.dll
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\MedallionShell.xml
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.pdb
+C:\Users\Kouglov\source\repos\RAWr\RAWr\bin\x64\Release\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.csprojAssemblyReference.cache
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.Form1.resources
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.Properties.Resources.resources
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.csproj.GenerateResource.cache
+C:\Users\Kouglov\source\repos\RAWr\RAWr\obj\x64\Release\RAWr.csproj.CopyComplete
