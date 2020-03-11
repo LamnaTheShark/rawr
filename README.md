@@ -71,3 +71,6 @@ It wasn't designed to do something else, especially load some 8k per 6k pixels R
 
 The point is : converted DNG from Magic Lantern have only a 128 pixel height thumbnail wich is impossible to look at when selecting the shots I want.
 So I created the tool.
+
+
+Licence : http://www.wtfpl.net/
