@@ -34,9 +34,12 @@ namespace RAWr
         int directoryNumber = 0;
         int doneDirectory = 0;
         bool loaded = false;
-        String[] fileTypes = { "dng", "cr2", "nef" , "DNG", "CR2", "NEF", "raw", "RAW" }; //Accepted file format
+        String[] fileTypes = { "dng", "cr2", "nef" , "DNG", "CR2", "NEF", "raw", "RAW"}; //Accepted file format
         //Not in any correlation with freeImage lib, just a choice.
-
+        String[] fileTypesJPG = { "JPG", "jpg", "jpeg", "JPEG" };
+        String[] fileTypesPNG = { "PNG", "png" };
+        String[] fileTypesGIF = { "gif", "GIF" };
+        String[] fileTypesWEB = { "webp", "WEBP" };
         public Form1()
         {
             InitializeComponent();
@@ -217,9 +220,105 @@ namespace RAWr
                     pictureBox1.Image = Properties.Resources.Splashrawr; //Display the UwU splash screen;
                 }
             }
+            else if (EndsWithAny(path, fileTypesJPG))
+            {
+                FIBITMAP dib = FreeImage.Load(FREE_IMAGE_FORMAT.FIF_JPEG, path, FREE_IMAGE_LOAD_FLAGS.DEFAULT); //Load with FreeImage
+                if (!dib.IsNull)
+                {
+                    FIBITMAP conv = FreeImage.ToneMapping(dib, FREE_IMAGE_TMO.FITMO_DRAGO03, 0, 0);//Shitty basic tonemapping to transform it in a colorspace printable
+                    pictureBox1.Image = FreeImage.GetBitmap(conv);
+                    FreeImage.Unload(dib);
+                    if (File.Exists(outputFolder + '\\' + currentFile.Split('\\')[currentFile.Split('\\').Length - 1]))//Check if file exist and color the square
+                    {
+                        buttonCheck.BackColor = Color.Green; //Wich is in fact a button, because why not
+                    }
+                    else
+                    {
+                        buttonCheck.BackColor = Color.Red;
+                    }
+                    pathLabel.Text = "JPG loaded";
+                }
+                else
+                {
+                    pathLabel.Text = "Error in reading JPG image, check your file";
+                    pictureBox1.Image = Properties.Resources.Splashrawr;
+                }
+            }
+            else if (EndsWithAny(path, fileTypesPNG))
+            {
+                FIBITMAP dib = FreeImage.Load(FREE_IMAGE_FORMAT.FIF_PNG, path, FREE_IMAGE_LOAD_FLAGS.DEFAULT); //Load with FreeImage
+                if (!dib.IsNull)
+                {
+                    FIBITMAP conv = FreeImage.ToneMapping(dib, FREE_IMAGE_TMO.FITMO_DRAGO03, 0, 0);//Shitty basic tonemapping to transform it in a colorspace printable
+                    pictureBox1.Image = FreeImage.GetBitmap(conv);
+                    FreeImage.Unload(dib);
+                    if (File.Exists(outputFolder + '\\' + currentFile.Split('\\')[currentFile.Split('\\').Length - 1]))//Check if file exist and color the square
+                    {
+                        buttonCheck.BackColor = Color.Green; //Wich is in fact a button, because why not
+                    }
+                    else
+                    {
+                        buttonCheck.BackColor = Color.Red;
+                    }
+                    pathLabel.Text = "PNG loaded";
+                }
+                else
+                {
+                    pathLabel.Text = "Error in reading PNG image, check your file";
+                    pictureBox1.Image = Properties.Resources.Splashrawr;
+                }
+            }
+            else if (EndsWithAny(path, fileTypesGIF))
+            {
+                FIBITMAP dib = FreeImage.Load(FREE_IMAGE_FORMAT.FIF_GIF, path, FREE_IMAGE_LOAD_FLAGS.DEFAULT); //Load with FreeImage
+                if (!dib.IsNull)
+                {
+                    FIBITMAP conv = FreeImage.ToneMapping(dib, FREE_IMAGE_TMO.FITMO_DRAGO03, 0, 0);//Shitty basic tonemapping to transform it in a colorspace printable
+                    pictureBox1.Image = FreeImage.GetBitmap(conv);
+                    FreeImage.Unload(dib);
+                    if (File.Exists(outputFolder + '\\' + currentFile.Split('\\')[currentFile.Split('\\').Length - 1]))//Check if file exist and color the square
+                    {
+                        buttonCheck.BackColor = Color.Green; //Wich is in fact a button, because why not
+                    }
+                    else
+                    {
+                        buttonCheck.BackColor = Color.Red;
+                    }
+                    pathLabel.Text = "GIF loaded";
+                }
+                else
+                {
+                    pathLabel.Text = "Error in reading GIF image, check your file";
+                    pictureBox1.Image = Properties.Resources.Splashrawr;
+                }
+            }
+            else if (EndsWithAny(path, fileTypesWEB))
+            {
+                FIBITMAP dib = FreeImage.Load(FREE_IMAGE_FORMAT.FIF_UNKNOWN, path, FREE_IMAGE_LOAD_FLAGS.DEFAULT); //Load with FreeImage
+                if (!dib.IsNull)
+                {
+                    FIBITMAP conv = FreeImage.ToneMapping(dib, FREE_IMAGE_TMO.FITMO_DRAGO03, 0, 0);//Shitty basic tonemapping to transform it in a colorspace printable
+                    pictureBox1.Image = FreeImage.GetBitmap(conv);
+                    FreeImage.Unload(dib);
+                    if (File.Exists(outputFolder + '\\' + currentFile.Split('\\')[currentFile.Split('\\').Length - 1]))//Check if file exist and color the square
+                    {
+                        buttonCheck.BackColor = Color.Green; //Wich is in fact a button, because why not
+                    }
+                    else
+                    {
+                        buttonCheck.BackColor = Color.Red;
+                    }
+                    pathLabel.Text = "webp loaded";
+                }
+                else
+                {
+                    pathLabel.Text = "Error in reading webp image, check your file. Reading those file is not assured";
+                    pictureBox1.Image = Properties.Resources.Splashrawr;
+                }
+            }
             else
             {
-                pathLabel.Text = "File is not RAW image";
+                pathLabel.Text = "File is not an image";
                 pictureBox1.Image = Properties.Resources.Splashrawr; //Display the UwU splash screen;
             }
         }
